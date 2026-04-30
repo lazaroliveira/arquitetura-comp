@@ -56,3 +56,14 @@ footer {
   color: white;
   margin-top: 30px;
 }
+
+.list-group-item {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.list-group-item.checked {
+  text-decoration: line-through;
+  opacity: 0.6;
+  background-color: #ffd6ec !important;
+}
