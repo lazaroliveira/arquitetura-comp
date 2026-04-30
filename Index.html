@@ -55,8 +55,8 @@
   </p>
 
   <p>
-    O design foi desenvolvido com base em uma estética temática inspirada na personagem
-    Hello Kitty, utilizando tons de rosa, elementos visuais decorativos e uma interface
+    O design foi desenvolvido com base em uma estética temática, 
+    utilizando tons de rosa, elementos visuais decorativos e uma interface
     amigável. O uso do Bootstrap contribuiu para um layout responsivo, garantindo uma
     boa visualização tanto em computadores quanto em dispositivos móveis.
   </p>
@@ -105,6 +105,7 @@
         Remova todos os cabos da tomada
         Utilize uma superfície limpa e organizada
         Separe ferramentas básicas (chave de fenda, pincel, etc.)
+        
         2. Desmontagem
         
         A desmontagem deve ser feita com cuidado para evitar danos aos componentes:
@@ -246,6 +247,11 @@
 <footer>Arquitetura de Computadores 💖</footer>
 
 <script>
+  document.querySelectorAll('#checklistItems li').forEach(item => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('checked');
+    });
+  });
 function showTab(tabId){
   document.querySelectorAll('.content').forEach(t=>t.classList.remove('active'));
   document.getElementById(tabId).classList.add('active');
