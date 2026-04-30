@@ -113,19 +113,11 @@ iframe {
 
 /* FOOTER (agora colado no chão) */
 footer {
-  width: 100%;
-  position: relative;
-
-  background: linear-gradient(90deg, #ff69b4, #ff85c1);
-  color: white;
-
   text-align: center;
-  padding: 15px 0;
-
-  font-size: 18px;
-  font-weight: bold;
-
-  margin-top: auto;
+  padding: 15px;
+  background: #ff69b4;
+  color: white;
+  margin-top: auto; /* ESSA LINHA resolve */
 }
 
 /* CHECKLIST */
