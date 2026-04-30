@@ -28,19 +28,47 @@
 <!-- INTRO COMPLETA -->
 <div id="intro" class="content active">
   <div class="card p-4">
+  <img src="./img/sanrio1.jpg" class="banner">
     <h2>Introdução</h2>
+    <br>
+    <hr>
 
-    <p>
+     <p>
       Este projeto consiste na criação de um site temático com o objetivo de apresentar
       um manual completo sobre desmontagem, limpeza e montagem de computadores.
-      O site foi desenvolvido utilizando HTML, CSS e Bootstrap.
+      O site foi desenvolvido utilizando HTML, CSS e Bootstrap, seguindo boas práticas
+      de organização e estruturação de código.
     </p>
 
     <p>
-      A proposta é oferecer aprendizado interativo com vídeo, slides e texto.
+      A proposta do site é oferecer uma experiência interativa e didática, facilitando
+      o aprendizado dos usuários por meio de diferentes formatos de conteúdo. Para isso,
+      o sistema foi dividido em abas, permitindo a navegação entre uma introdução com
+      os integrantes da equipe, um vídeo explicativo incorporado do YouTube, um espaço
+      para apresentação de slides e uma seção com conteúdo escrito detalhado.
     </p>
 
-    <p><strong>Equipe:</strong></p>
+    <p>
+      Além disso, o site conta com um checklist interativo, que auxilia o usuário a
+      acompanhar cada etapa do processo de manutenção de um computador, tornando o
+      aprendizado mais prático e organizado.
+    </p>
+
+    <p>
+      O design foi desenvolvido com base em uma estética temática, utilizando tons de rosa,
+      elementos visuais decorativos e uma interface amigável. O uso do Bootstrap contribuiu
+      para um layout responsivo, garantindo uma boa visualização tanto em computadores quanto
+      em dispositivos móveis.
+    </p>
+
+    <p>
+      Dessa forma, o projeto une conceitos de arquitetura de computadores com desenvolvimento
+      web, proporcionando uma ferramenta educativa moderna, visualmente atrativa e funcional.
+    </p>
+    <br>
+    <hr>
+
+    <p><strong>Equipe responsável:</strong></p>
     <ul>
       <li>Lázaro Tenório de Oliveira</li>
       <li>Elizabete Silva Ferreira</li>
@@ -48,33 +76,44 @@
       <li>Thayná Vitória Rodrigues</li>
       <li>Diego Tenório Silva</li>
     </ul>
+    <br>
+    <hr>
   </div>
 </div>
 
 <!-- VIDEO -->
 <div id="video" class="content">
-  Manual em vídeo:
+  <div class="card p-4">
+  <h2>Manual em vídeo:</h2>
   <br>
   <hr>
-  <div class="card p-4">
+  <img src="./img/sanrio2.jpg" class="banner">
     <iframe src="https://www.youtube.com/embed/VIDEO_ID"></iframe>
+  <br>
+  <hr>
   </div>
 </div>
 
 <!-- SLIDES -->
 <div id="manual" class="content">
-  Manual em slide:
+  <div class="card p-4">
+  <h2>Manual em slide:</h2>
   <br>
   <hr>
-  <div class="card p-4">
+    <img src="./img/sanrio3.jpg" class="banner">
     <iframe src="SEU_SLIDE_AQUI"></iframe>
+  <br>
+  <hr>
   </div>
 </div>
 
 <!-- DESCRIÇÃO -->
 <div id="descricao" class="content">
   <div class="card p-4">
+    <img src="./img/sanrio1.jpg" class="banner">
     <h2>Descrição dos Componentes presentes no computador desmontado:</h2>
+    <br>
+    <hr>
 
     <ul>
       <b><li><strong>Processador:</strong></li></b>
@@ -83,112 +122,125 @@
       <b><li><strong>Fonte:</strong></li></b>
       <b><li><strong>HD:</strong></li></b>
       <b><li><strong>Placa de rede:</strong></li></b>
-      <b><li><strong>Dispositivo de DVD:</strong></li></b>b>
+      <b><li><strong>Dispositivo de DVD:</strong></li></b>
     </ul>
+    <br>
+    <hr>
   </div>
 </div>
 
 <!-- MAPA -->
 <div id="mapa" class="content">
   <div class="card p-4">
+    <img src="./img/sanrio2.jpg" class="banner">
     <h2>Mapa de Conectividade do computador desmontado</h2>
+    <br>
+    <hr>
     <img src="img/seu-mapa.png" class="img-fluid">
-    <p>Um mapa de conectividade é uma representação visual (geralmente um diagrama) que mostra como os componentes de um sistema estão interligados e como a informação circula entre eles. O mapa de conectividade acima refere-se ao computador desmontado pela equipe</p>
+    <br>
+    <hr>
+    <br>
+    <p>Um mapa de conectividade é uma representação visual que mostra como os componentes de um sistema estão interligados e como a informação circula entre eles. O mapa de conectividade acima refere-se ao computador desmontado pela equipe</p>
   </div>
 </div>
 
 <!-- TUTORIAL GRANDE EM BLOCOS -->
-<div class="card p-4">
-  <h2>Remoção dos Componentes (Desmontagem)</h2>
+<div id="checklist" class="content">
+  <div class="card p-4">
+    <img src="./img/sanrio3.jpg" class="banner">
 
-  <p>
-    A etapa de remoção dos componentes deve ser realizada com atenção e cuidado,
-    pois envolve peças sensíveis e conexões delicadas. Qualquer erro pode causar
-    danos ao equipamento.
-  </p>
+    <h2>Remoção dos Componentes (Desmontagem)</h2>
 
-  <hr>
+    <p>
+      A etapa de remoção dos componentes deve ser realizada com atenção e cuidado,
+      pois envolve peças sensíveis e conexões delicadas. Qualquer erro pode causar danos ao equipamento.
+    </p>
 
-  <h4>1. Desconexão inicial</h4>
-  <ul>
-    <li>Certifique-se de que o computador está desligado da tomada</li>
-    <li>Remova todos os cabos externos (energia, HDMI, USB, etc.)</li>
-    <li>Pressione o botão de ligar por alguns segundos para descarregar energia residual</li>
-  </ul>
+    <!-- PROGRESSO -->
+    <div class="progress mb-3">
+      <div class="card p-4">
+      <img src="./img/sanrio3.jpg" class="banner">
+      </div>
+      <div id="progressBar" class="progress-bar bg-success">0%</div>
+    </div>
+    <p id="progressText"></p>
 
-  <h4>2. Abertura do gabinete</h4>
-  <ul>
-    <li>Utilize uma chave adequada (geralmente Philips)</li>
-    <li>Remova os parafusos da lateral do gabinete</li>
-    <li>Deslize ou retire a tampa com cuidado</li>
-    <li>Evite forçar a estrutura</li>
-  </ul>
+    <h5>⚠️ Cuidados importantes</h5>
+    <ul class="list-group checklistItems">
+      <li class="list-group-item">Evitar eletricidade estática</li>
+      <li class="list-group-item">Não tocar nos circuitos</li>
+      <li class="list-group-item">Nunca forçar encaixes</li>
+      <li class="list-group-item">Trabalhar com calma</li>
+    </ul>
+    
+    <h5>1. Organização</h5>
+    <ul class="list-group checklistItems mb-3">
+      <li class="list-group-item">Separar parafusos por tipo</li>
+      <li class="list-group-item">Organizar componentes</li>
+      <li class="list-group-item">Evitar peças soltas</li>
+    </ul>
 
-  <h4>3. Identificação dos componentes</h4>
-  <ul>
-    <li>Observe a posição dos componentes antes de remover</li>
-    <li>Identifique cabos de energia e dados</li>
-    <li>Se possível, tire uma foto para referência</li>
-  </ul>
+    <h5>2. Desconexão inicial</h5>
+    <ul class="list-group checklistItems mb-3">
+      <li class="list-group-item">Desligar o computador da tomada</li>
+      <li class="list-group-item">Remover todos os cabos externos (energia, HDMI, USB, etc.)</li>
+      <li class="list-group-item">Pressionar o botão de ligar para descarregar energia residual</li>
+    </ul>
 
-  <h4>4. Remoção dos cabos</h4>
-  <ul>
-    <li>Desconecte os cabos segurando pelo conector (não pelo fio)</li>
-    <li>Cabo de alimentação da placa-mãe</li>
-    <li>Cabos SATA (HD/SSD)</li>
-    <li>Cabos da fonte de alimentação</li>
-    <li>Evite puxões bruscos</li>
-  </ul>
+    <h5>3. Abertura do gabinete</h5>
+    <ul class="list-group checklistItems mb-3">
+      <li class="list-group-item">Utilizar chave adequada (Philips)</li>
+      <li class="list-group-item">Remover parafusos da lateral</li>
+      <li class="list-group-item">Abrir a tampa com cuidado</li>
+      <li class="list-group-item">Evitar forçar a estrutura</li>
+    </ul>
 
-  <h4>5. Remoção da Memória RAM</h4>
-  <ul>
-    <li>Localize os módulos na placa-mãe</li>
-    <li>Pressione as travas laterais</li>
-    <li>A memória irá se soltar automaticamente</li>
-    <li>Retire segurando pelas bordas</li>
-  </ul>
+    <h5>4. Identificação dos componentes</h5>
+    <ul class="list-group checklistItems mb-3">
+      <li class="list-group-item">Observar a posição dos componentes</li>
+      <li class="list-group-item">Identificar cabos de energia e dados</li>
+      <li class="list-group-item">Tirar foto para referência</li>
+    </ul>
 
-  <h4>6. Remoção do HD/SSD</h4>
-  <ul>
-    <li>Localize o dispositivo na baia ou suporte</li>
-    <li>Remova os parafusos (se houver)</li>
-    <li>Desconecte cabos SATA e de energia</li>
-    <li>Retire com cuidado</li>
-  </ul>
+    <h5>5. Remoção dos cabos</h5>
+    <ul class="list-group checklistItems mb-3">
+      <li class="list-group-item">Desconectar cabos pelo conector</li>
+      <li class="list-group-item">Remover cabo da placa-mãe</li>
+      <li class="list-group-item">Remover cabos SATA</li>
+      <li class="list-group-item">Remover cabos da fonte</li>
+      <li class="list-group-item">Evitar puxões bruscos</li>
+    </ul>
 
-  <h4>7. Remoção da Placa de Vídeo</h4>
-  <ul>
-    <li>Desconecte o cabo de energia da placa</li>
-    <li>Remova o parafuso de fixação</li>
-    <li>Pressione a trava do slot PCI-Express</li>
-    <li>Retire a placa com cuidado</li>
-  </ul>
+    <h5>6. Remoção do HD</h5>
+    <ul class="list-group checklistItems mb-3">
+      <li class="list-group-item">Localizar o HD</li>
+      <li class="list-group-item">Remover parafusos</li>
+      <li class="list-group-item">Desconectar cabos SATA e energia</li>
+      <li class="list-group-item">Retirar com cuidado</li>
+    </ul>
 
-  <h4>8. Remoção de outros componentes</h4>
-  <ul>
-    <li>Cooler do processador</li>
-    <li>Fonte de alimentação</li>
-    <li>Placa-mãe</li>
-  </ul>
+    <h5>7. Remoção da Memória RAM</h5>
+    <ul class="list-group checklistItems mb-3">
+      <li class="list-group-item">Localizar módulos de RAM</li>
+      <li class="list-group-item">Pressionar travas laterais</li>
+      <li class="list-group-item">Retirar segurando pelas bordas</li>
+    </ul>
 
-  <p><strong>Atenção:</strong> Esses componentes exigem mais cuidado e conhecimento técnico.</p>
+    <h5>8. Outros componentes</h5>
+    <ul class="list-group checklistItems mb-3">
+      <li class="list-group-item">Remover cooler do processador</li>
+      <li class="list-group-item">Remover fonte de alimentação</li>
+      <li class="list-group-item">Remover placa-mãe</li>
+    </ul>
 
-  <h4>9. Organização</h4>
-  <ul>
-    <li>Separe os parafusos por tipo</li>
-    <li>Mantenha os componentes organizados</li>
-    <li>Evite deixar peças soltas</li>
-  </ul>
-
-  <hr>
-
-  <h4>⚠️ Cuidados importantes</h4>
-  <ul>
-    <li>Evite eletricidade estática</li>
-    <li>Não toque diretamente nos circuitos</li>
-    <li>Nunca force encaixes</li>
-    <li>Trabalhe com calma e atenção</li>
-  </ul>
+    <h5>9. Remoção da Placa de Vídeo</h5>
+    <ul class="list-group checklistItems mb-3">
+      <li class="list-group-item">Desconectar energia da GPU</li>
+      <li class="list-group-item">Remover parafuso traseiro</li>
+      <li class="list-group-item">Pressionar trava PCI-Express</li>
+      <li class="list-group-item">Retirar a placa com cuidado</li>
+    </ul>
+  </div>
 </div>
 
 <footer>Arquitetura de Computadores</footer>
