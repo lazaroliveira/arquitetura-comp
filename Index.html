@@ -10,10 +10,6 @@
 </head>
 <body>
 
-<audio autoplay loop>
-  <source src="music.mp3" type="audio/mp3">
-</audio>
-
 <header>Manual de desmontagem, limpeza e montagem</header>
 
 <nav class="navbar navbar-expand-lg navbar-dark">
@@ -29,11 +25,20 @@
 
 <div class="container mt-4">
 
-<!-- INTRO -->
+<!-- INTRO COMPLETA -->
 <div id="intro" class="content active">
-  <div class="card p-4 position-relative">
+  <div class="card p-4">
     <h2>Introdução</h2>
-    <p>Site sobre manutenção de computadores.</p>
+
+    <p>
+      Este projeto consiste na criação de um site temático com o objetivo de apresentar
+      um manual completo sobre desmontagem, limpeza e montagem de computadores.
+      O site foi desenvolvido utilizando HTML, CSS e Bootstrap.
+    </p>
+
+    <p>
+      A proposta é oferecer aprendizado interativo com vídeo, slides e texto.
+    </p>
 
     <p><strong>Equipe:</strong></p>
     <ul>
@@ -63,14 +68,15 @@
 <!-- DESCRIÇÃO -->
 <div id="descricao" class="content">
   <div class="card p-4">
-    <h2>Componentes</h2>
+    <h2>Descrição dos Componentes</h2>
+
     <ul>
-      <li>Processador:</li>
-      <li>Memória RAM:</li>
-      <li>Placa-mãe:</li>
-      <li>Fonte:</li>
-      <li>HD/SSD:</li>
-      <li>Placa de vídeo:</li>
+      <li><strong>Processador:</strong></li>
+      <li><strong>Memória RAM:</strong></li>
+      <li><strong>Placa-mãe:</strong></li>
+      <li><strong>Fonte:</strong></li>
+      <li><strong>HD/SSD:</strong></li>
+      <li><strong>Placa de vídeo:</strong></li>
     </ul>
   </div>
 </div>
@@ -84,39 +90,52 @@
   </div>
 </div>
 
-<!-- TUTORIAL INTERATIVO -->
+<!-- TUTORIAL GRANDE EM BLOCOS -->
 <div id="checklist" class="content">
   <div class="card p-4">
+
     <h2>Tutorial Completo</h2>
 
-    <ul class="list-group" id="checklistItems">
+    <div class="progress mb-3">
+      <div id="progressBar" class="progress-bar bg-success">0%</div>
+    </div>
+    <p id="progressText"></p>
 
-      <li class="list-group-item">1. Desligar completamente o computador</li>
-      <li class="list-group-item">Remover todos os cabos</li>
-      <li class="list-group-item">Preparar ambiente adequado</li>
+    <div id="checklistItems">
 
-      <li class="list-group-item">2. Abrir gabinete</li>
-      <li class="list-group-item">Remover parafusos laterais</li>
-      <li class="list-group-item">Identificar componentes</li>
+      <h5>1. Preparação</h5>
+      <ul class="list-group mb-3">
+        <li class="list-group-item">Desligar o computador</li>
+        <li class="list-group-item">Remover cabos</li>
+        <li class="list-group-item">Preparar ambiente</li>
+      </ul>
 
-      <li class="list-group-item">3. Desmontar peças (RAM, HD, GPU)</li>
-      <li class="list-group-item">Organizar parafusos</li>
+      <h5>2. Desmontagem</h5>
+      <ul class="list-group mb-3">
+        <li class="list-group-item">Abrir gabinete</li>
+        <li class="list-group-item">Remover RAM</li>
+        <li class="list-group-item">Remover HD</li>
+      </ul>
 
-      <li class="list-group-item">4. Limpar componentes com pincel/ar</li>
-      <li class="list-group-item">Evitar líquidos</li>
+      <h5>3. Limpeza</h5>
+      <ul class="list-group mb-3">
+        <li class="list-group-item">Limpar com pincel</li>
+        <li class="list-group-item">Usar ar comprimido</li>
+      </ul>
 
-      <li class="list-group-item">5. Reinstalar componentes</li>
-      <li class="list-group-item">Conectar todos os cabos</li>
+      <h5>4. Montagem</h5>
+      <ul class="list-group mb-3">
+        <li class="list-group-item">Reinstalar peças</li>
+        <li class="list-group-item">Conectar cabos</li>
+      </ul>
 
-      <li class="list-group-item">6. Organizar cabos internos</li>
+      <h5>5. Teste</h5>
+      <ul class="list-group mb-3">
+        <li class="list-group-item">Ligar computador</li>
+        <li class="list-group-item">Verificar funcionamento</li>
+      </ul>
 
-      <li class="list-group-item">7. Ligar computador</li>
-      <li class="list-group-item">Verificar funcionamento</li>
-
-      <li class="list-group-item">Segurança: evitar estática</li>
-      <li class="list-group-item">Não forçar peças</li>
-
-    </ul>
+    </div>
 
   </div>
 </div>
@@ -125,20 +144,6 @@
 
 <footer>Arquitetura de Computadores</footer>
 
-<script>
-function showTab(tabId){
-  document.querySelectorAll('.content').forEach(t=>t.classList.remove('active'));
-  document.getElementById(tabId).classList.add('active');
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll('#checklistItems li').forEach(item => {
-    item.addEventListener('click', () => {
-      item.classList.toggle('checked');
-    });
-  });
-});
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
