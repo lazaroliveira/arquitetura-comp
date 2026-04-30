@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manual Kuromi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio autoplay loop>
+  <source src="music.mp3" type="audio/mp3">
+</audio>
+
+<header> Manual de desmontagem, limpeza e monntagem de computadores</header>
+
+<nav>
+  <button onclick="showTab('intro')">Introdução</button>
+  <button onclick="showTab('video')">Vídeo</button>
+  <button onclick="showTab('manual')">Slides</button>
+  <button onclick="showTab('texto')">Texto</button>
+  <button onclick="showTab('checklist')">Checklist</button>
+</nav>
+
+<div id="intro" class="content active">
+  <div class="card">
+    <img class="kuro" src="./img/kuromi1.png">
+    <h2>Introdução</h2>
+    <p>Equipe:</p>
+    <ul>
+      <li>Nome 1</li>
+      <li>Nome 2</li>
+    </ul>
+  </div>
+</div>
+
+<div id="video" class="content">
+  <div class="card">
+    <img class="kuro" src="./img/kuromi2.png">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID"></iframe>
+  </div>
+</div>
+
+<div id="manual" class="content">
+  <div class="card">
+    <img class="kuro" src="./img/kuromi3.png">
+    <iframe src="SEU_SLIDE_AQUI"></iframe>
+  </div>
+</div>
+
+<div id="texto" class="content">
+  <div class="card">
+    <img class="kuro" src="./img/kuromi1.png">
+    <p>Desmontagem, limpeza e montagem aqui...</p>
+  </div>
+</div>
+
+<div id="checklist" class="content">
+  <div class="card">
+    <img class="kuro" src="./img/kuromi2.png">
+    <ul class="checklist">
+      <li><input type="checkbox"> Desligar PC</li>
+      <li><input type="checkbox"> Limpar</li>
+      <li><input type="checkbox"> Montar</li>
+    </ul>
+  </div>
+</div>
+
+<footer>Arquitetura de Computadores 💜</footer>
+
+<script>
+function showTab(tabId){
+  document.querySelectorAll('.content').forEach(t=>t.classList.remove('active'));
+  document.getElementById(tabId).classList.add('active');
+}
+</script>
+
+</body>
+</html>
