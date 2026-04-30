@@ -6,7 +6,6 @@
   <title>Manual de arquitetura de computadores</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,247 +14,130 @@
   <source src="music.mp3" type="audio/mp3">
 </audio>
 
-<header> Manual de desmontagem, limpeza e montagem </header>
+<header>Manual de desmontagem, limpeza e montagem</header>
 
 <nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container justify-content-center">
     <button class="btn btn-outline-light m-2" onclick="showTab('intro')">Introdução</button>
     <button class="btn btn-outline-light m-2" onclick="showTab('video')">Vídeo</button>
     <button class="btn btn-outline-light m-2" onclick="showTab('manual')">Slides</button>
-    <button class="btn btn-outline-light m-2" onclick="showTab('texto')">Texto</button>
-    <button class="btn btn-outline-light m-2" onclick="showTab('checklist')">Checklist</button>
+    <button class="btn btn-outline-light m-2" onclick="showTab('descricao')">Descrição</button>
+    <button class="btn btn-outline-light m-2" onclick="showTab('mapa')">Mapa</button>
+    <button class="btn btn-outline-light m-2" onclick="showTab('checklist')">Tutorial</button>
   </div>
 </nav>
 
 <div class="container mt-4">
 
+<!-- INTRO -->
 <div id="intro" class="content active">
   <div class="card p-4 position-relative">
-    <img class="kuromi-img" src="./img/kuromi1.png">
     <h2>Introdução</h2>
-    <p>
-      Este projeto consiste na criação de um site temático com o objetivo de apresentar
-      um manual completo sobre desmontagem, limpeza e montagem de computadores.
-      O site foi desenvolvido utilizando HTML, CSS e Bootstrap, seguindo boas práticas
-      de organização e estruturação de código.
-    </p>
+    <p>Site sobre manutenção de computadores.</p>
 
-  <p>
-    A proposta do site é oferecer uma experiência interativa e didática, facilitando
-    o aprendizado dos usuários por meio de diferentes formatos de conteúdo. Para isso,
-    o sistema foi dividido em abas, permitindo a navegação entre uma introdução com
-    os integrantes da equipe, um vídeo explicativo incorporado do YouTube, um espaço
-    para apresentação de slides e uma seção com conteúdo escrito detalhado.
-  </p>
-
-  <p>
-    Além disso, o site conta com um checklist interativo, que auxilia o usuário a
-    acompanhar cada etapa do processo de manutenção de um computador, tornando o
-    aprendizado mais prático e organizado.
-  </p>
-
-  <p>
-    O design foi desenvolvido com base em uma estética temática, 
-    utilizando tons de rosa, elementos visuais decorativos e uma interface
-    amigável. O uso do Bootstrap contribuiu para um layout responsivo, garantindo uma
-    boa visualização tanto em computadores quanto em dispositivos móveis.
-  </p>
-
-  <p>
-    Dessa forma, o projeto une conceitos de arquitetura de computadores com
-    desenvolvimento web, proporcionando uma ferramenta educativa moderna,
-    visualmente atrativa e funcional.
-  </p>
-    <p>Equipe:</p>
+    <p><strong>Equipe:</strong></p>
     <ul>
-      <li>Lázaro Tenório de Oliveira</li>
-      <li>Elizabete Silva Ferreira</li>
-      <li>Maria Vitória Torres</li>
-      <li>Thayná Vitória Rodrigues</li>
-      <li>Diego Tenório Silva</li>
+      <li>Lázaro Tenório</li>
+      <li>Elizabete Silva</li>
+      <li>Maria Vitória</li>
+      <li>Thayná Vitória</li>
+      <li>Diego Tenório</li>
     </ul>
   </div>
 </div>
 
+<!-- VIDEO -->
 <div id="video" class="content">
-  <div class="card p-4 position-relative">
-    <img class="kuromi-img" src="./img/kuromi2.png">
+  <div class="card p-4">
     <iframe src="https://www.youtube.com/embed/VIDEO_ID"></iframe>
-    <!-- isso tem que ser alterado, o ID. Vai ser mudado quando eu upar o video -->
   </div>
 </div>
 
+<!-- SLIDES -->
 <div id="manual" class="content">
-  <div class="card p-4 position-relative">
-    <img class="kuromi-img" src="./img/kuromi3.png">
+  <div class="card p-4">
     <iframe src="SEU_SLIDE_AQUI"></iframe>
-    <!-- isso tambem será alterado quando o slide estiver pronto -->
   </div>
 </div>
 
-<div id="texto" class="content">
-  <div class="card p-4 position-relative">
-    <img class="kitty-img" src="./img/hello1.png">
-    <h4>Manual:</h4>
-      <p>
-        1. Preparação
-        Antes de iniciar qualquer procedimento, é fundamental preparar o ambiente e os materiais necessários:
-        
-        Desligue completamente o computador
-        Remova todos os cabos da tomada
-        Utilize uma superfície limpa e organizada
-        Separe ferramentas básicas (chave de fenda, pincel, etc.)
-        
-        2. Desmontagem
-        
-        A desmontagem deve ser feita com cuidado para evitar danos aos componentes:
-        
-        Abra o gabinete removendo os parafusos laterais
-        Retire os cabos internos com atenção
-        Remova componentes como:
-        Memória RAM
-        HD/SSD
-        Placa de vídeo (se houver)
-        Evite forçar peças ou conectores
-        3. Limpeza
-        
-        A limpeza é essencial para o bom funcionamento do computador:
-        
-        Utilize pincel macio para retirar a poeira
-        Use ar comprimido para áreas de difícil acesso
-        Não aplique líquidos diretamente nos componentes
-        Limpe ventoinhas e dissipadores com cuidado
-        4. Montagem
-        
-        Após a limpeza, inicie a remontagem:
-        
-        Recoloque os componentes na ordem correta
-        Conecte todos os cabos corretamente
-        Verifique se tudo está bem encaixado
-        Feche o gabinete e parafuse novamente
-        5. Teste Final
-        
-        Após montar:
-        
-        Reconecte o computador à energia
-        Ligue o sistema
-        Verifique se todos os componentes estão funcionando corretamente
-        6. Dicas Importantes
-        Evite eletricidade estática (toque em uma superfície metálica antes)
-        Organize os parafusos durante o processo
-        Nunca force encaixes
-        Trabalhe com calma e atenção
-  </p>
+<!-- DESCRIÇÃO -->
+<div id="descricao" class="content">
+  <div class="card p-4">
+    <h2>Componentes</h2>
+    <ul>
+      <li>Processador:</li>
+      <li>Memória RAM:</li>
+      <li>Placa-mãe:</li>
+      <li>Fonte:</li>
+      <li>HD/SSD:</li>
+      <li>Placa de vídeo:</li>
+    </ul>
   </div>
 </div>
 
+<!-- MAPA -->
+<div id="mapa" class="content">
+  <div class="card p-4">
+    <h2>Mapa de Conectividade</h2>
+    <img src="img/seu-mapa.png" class="img-fluid">
+    <p>Explique aqui manualmente.</p>
+  </div>
+</div>
+
+<!-- TUTORIAL INTERATIVO -->
 <div id="checklist" class="content">
-  <div class="card p-4 position-relative">
-    <img class="kuromi-img" src="./img/kuromi2.png">
-    
-    <h2>Tutorial Completo: Desmontagem, Limpeza e Montagem de Computadores</h2>
+  <div class="card p-4">
+    <h2>Tutorial Completo</h2>
 
-    <p>
-      Este guia apresenta de forma detalhada o processo de manutenção de um computador,
-      abordando desde a preparação até a verificação final do funcionamento do sistema.
-    </p>
+    <ul class="list-group" id="checklistItems">
 
-    <hr>
+      <li class="list-group-item">1. Desligar completamente o computador</li>
+      <li class="list-group-item">Remover todos os cabos</li>
+      <li class="list-group-item">Preparar ambiente adequado</li>
 
-    <h4>1. Preparação do Ambiente</h4>
-    <ul>
-      <li>Desligue completamente o computador e retire da tomada</li>
-      <li>Desconecte todos os periféricos (mouse, teclado, monitor, etc.)</li>
-      <li>Trabalhe em uma superfície limpa, seca e bem iluminada</li>
-      <li>Utilize ferramentas adequadas (chave Phillips, pincel antiestático)</li>
-      <li>Evite eletricidade estática (toque em uma superfície metálica antes de iniciar)</li>
+      <li class="list-group-item">2. Abrir gabinete</li>
+      <li class="list-group-item">Remover parafusos laterais</li>
+      <li class="list-group-item">Identificar componentes</li>
+
+      <li class="list-group-item">3. Desmontar peças (RAM, HD, GPU)</li>
+      <li class="list-group-item">Organizar parafusos</li>
+
+      <li class="list-group-item">4. Limpar componentes com pincel/ar</li>
+      <li class="list-group-item">Evitar líquidos</li>
+
+      <li class="list-group-item">5. Reinstalar componentes</li>
+      <li class="list-group-item">Conectar todos os cabos</li>
+
+      <li class="list-group-item">6. Organizar cabos internos</li>
+
+      <li class="list-group-item">7. Ligar computador</li>
+      <li class="list-group-item">Verificar funcionamento</li>
+
+      <li class="list-group-item">Segurança: evitar estática</li>
+      <li class="list-group-item">Não forçar peças</li>
+
     </ul>
 
-    <h4>2. Abertura do Gabinete</h4>
-    <ul>
-      <li>Remova os parafusos laterais do gabinete</li>
-      <li>Deslize a tampa cuidadosamente</li>
-      <li>Identifique os principais componentes internos:</li>
-      <ul>
-        <li>Fonte de alimentação</li>
-        <li>Placa-mãe</li>
-        <li>Memória RAM</li>
-        <li>Armazenamento (HD/SSD)</li>
-        <li>Placa de vídeo (se houver)</li>
-      </ul>
-    </ul>
-
-    <h4>3. Desmontagem dos Componentes</h4>
-    <ul>
-      <li>Desconecte todos os cabos com cuidado (energia e dados)</li>
-      <li>Remova a memória RAM pressionando as travas laterais</li>
-      <li>Retire o HD/SSD dos suportes</li>
-      <li>Remova a placa de vídeo soltando o parafuso e a trava do slot PCI-Express</li>
-      <li>Caso necessário, retire a placa-mãe</li>
-      <li>Organize os parafusos para evitar perdas</li>
-    </ul>
-
-    <h4>4. Processo de Limpeza</h4>
-    <ul>
-      <li>Utilize ar comprimido para remover poeira acumulada</li>
-      <li>Use pincel macio para limpar áreas delicadas</li>
-      <li>Limpe ventoinhas e dissipadores com cuidado</li>
-      <li>Não utilize água ou produtos líquidos diretamente</li>
-      <li>Se necessário, utilize álcool isopropílico em pequenas quantidades</li>
-    </ul>
-
-    <h4>5. Remontagem do Sistema</h4>
-    <ul>
-      <li>Reinstale a placa-mãe no gabinete</li>
-      <li>Instale o processador (caso tenha sido removido)</li>
-      <li>Coloque a memória RAM nos slots corretos</li>
-      <li>Reinstale HD/SSD</li>
-      <li>Conecte todos os cabos da fonte de alimentação</li>
-      <li>Verifique o encaixe correto de todos os componentes</li>
-    </ul>
-
-    <h4>6. Organização Interna</h4>
-    <ul>
-      <li>Organize os cabos para melhorar o fluxo de ar</li>
-      <li>Evite fios soltos próximos às ventoinhas</li>
-      <li>Utilize presilhas (se possível)</li>
-    </ul>
-
-    <h4>7. Teste e Verificação Final</h4>
-    <ul>
-      <li>Conecte o computador à energia</li>
-      <li>Ligue o sistema</li>
-      <li>Verifique se todos os componentes são reconhecidos</li>
-      <li>Observe ruídos ou comportamentos anormais</li>
-      <li>Confira temperaturas e desempenho</li>
-    </ul>
-
-    <hr>
-
-    <h4>Dicas de Segurança</h4>
-    <ul>
-      <li>Nunca force encaixes de componentes</li>
-      <li>Evite contato direto com circuitos eletrônicos</li>
-      <li>Trabalhe com calma e atenção</li>
-      <li>Em caso de dúvida, consulte um profissional</li>
-    </ul>
   </div>
 </div>
 
 </div>
 
-<footer>Arquitetura de Computadores 💖</footer>
+<footer>Arquitetura de Computadores</footer>
 
 <script>
+function showTab(tabId){
+  document.querySelectorAll('.content').forEach(t=>t.classList.remove('active'));
+  document.getElementById(tabId).classList.add('active');
+}
+
+document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll('#checklistItems li').forEach(item => {
     item.addEventListener('click', () => {
       item.classList.toggle('checked');
     });
   });
-function showTab(tabId){
-  document.querySelectorAll('.content').forEach(t=>t.classList.remove('active'));
-  document.getElementById(tabId).classList.add('active');
-}
+});
 </script>
 
 </body>
