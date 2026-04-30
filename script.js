@@ -1,9 +1,18 @@
 function showTab(tabId){
-  document.querySelectorAll('.content').forEach(t=>t.classList.remove('active'));
-  document.getElementById(tabId).classList.add('active');
+  const tabs = document.querySelectorAll('.content');
+
+  tabs.forEach(t => {
+    t.classList.remove('active');
+  });
+
+  const selected = document.getElementById(tabId);
+
+  setTimeout(() => {
+    selected.classList.add('active');
+  }, 50);
 }
 
-const items = document.querySelectorAll('#checklistItems .list-group-item');
+const items = document.querySelectorAll('.checklistItems li');
 const progressBar = document.getElementById('progressBar');
 const progressText = document.getElementById('progressText');
 
@@ -14,7 +23,7 @@ function updateProgress(){
   const percent = Math.round((done / total) * 100);
   progressBar.style.width = percent + '%';
   progressBar.innerText = percent + '%';
-  progressText.innerText = `${done} de ${total} etapas concluídas`;
+  progressText.innerText = done + ' de ' + total + ' etapas concluídas';
 }
 
 items.forEach((item, index) => {
@@ -31,3 +40,4 @@ items.forEach((item, index) => {
 });
 
 updateProgress();
+
