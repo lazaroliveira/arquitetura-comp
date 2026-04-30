@@ -18,7 +18,7 @@ header {
   background: #ff85c1 !important;
 }
 
-.navbar .btn {
+.btn {
   border-radius: 20px;
 }
 
@@ -26,18 +26,12 @@ header {
   border: none;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  margin-bottom: 20px;
   transition: 0.3s;
 }
 
 .card:hover {
   transform: translateY(-5px);
-}
-
-.kitty-img {
-  width: 100px;
-  position: absolute;
-  top: -25px;
-  right: -10px;
 }
 
 .content { display: none; }
