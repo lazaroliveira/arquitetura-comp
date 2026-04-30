@@ -40,4 +40,3 @@ items.forEach((item, index) => {
 });
 
 updateProgress();
-
