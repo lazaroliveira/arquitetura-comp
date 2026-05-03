@@ -16,6 +16,15 @@ body {
   flex: 1;
 }
 
+#reference{
+  font-size: 10px;
+}
+
+.card_fotos{
+  display: flex;
+  text-align: center;
+}
+
 /* HEADER */
 header {
   background: linear-gradient(90deg, #ff69b4, #ff85c1);
