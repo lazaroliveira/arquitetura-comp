@@ -36,6 +36,31 @@ header {
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
+/* FAZ A IMAGEM IGNORAR O CONTAINER */
+.mapa-img {
+  width: 100%;
+  height: auto !important;   /* remove altura fixa */
+  object-fit: contain !important; /* mostra tudo */
+
+  display: block;
+  margin: 20px auto;
+
+  border-radius: 10px;
+}
+
+/* PADRÃO IGUAL AO MAPA (para vídeo e slides) */
+.media-frame {
+  width: 100%;
+  max-width: 1100px; /* mesmo limite do mapa */
+  height: 500px;
+
+  display: block;
+  margin: 20px auto;
+
+  border-radius: 15px;
+  border: none;
+}
+
 /* NAVBAR */
 .navbar {
   background: #ff85c1 !important;
