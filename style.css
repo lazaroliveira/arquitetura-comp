@@ -8,7 +8,7 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(135deg, #ffe4ec, #ffc1e3);
+  background: linear-gradient(135deg, #4568c971, #3642b173);
 }
 
 /* faz o conteúdo crescer automaticamente */
@@ -27,7 +27,7 @@ body {
 
 /* HEADER */
 header {
-  background: linear-gradient(90deg, #ff69b4, #ff85c1);
+  background: linear-gradient(90deg, #3263ce, #021b4d);
   color: white;
   text-align: center;
   padding: 25px;
@@ -63,7 +63,7 @@ header {
 
 /* NAVBAR */
 .navbar {
-  background: #ff85c1 !important;
+  background: #163f998c !important;
 }
 
 .navbar .btn {
@@ -149,7 +149,7 @@ iframe {
 footer {
   text-align: center;
   padding: 15px;
-  background: #ff69b4;
+  background: #2a45bb;
   color: white;
   margin-top: auto; /* ESSA LINHA resolve */
 }
@@ -163,5 +163,5 @@ footer {
 .list-group-item.checked {
   text-decoration: line-through;
   opacity: 0.6;
-  background-color: #ffd6ec !important;
+  background-color: #22468a !important;
 }
